@@ -12,8 +12,8 @@
 		A060C1B22032D1BC0044E83B /* TableViewCellGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060C1B12032D1BC0044E83B /* TableViewCellGettable.swift */; };
 		A060C1B42032D4CE0044E83B /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A060C1B32032D4CE0044E83B /* TestCell.xib */; };
 		A060C1B62032D4F70044E83B /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060C1B52032D4F70044E83B /* TestCell.swift */; };
-		A068FC5E2032B6900028219F /* Slash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A068FC542032B6900028219F /* Slash.framework */; };
-		A068FC632032B6900028219F /* SlashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068FC622032B6900028219F /* SlashTests.swift */; };
+		A068FC5E2032B6900028219F /* Snakepit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A068FC542032B6900028219F /* Snakepit.framework */; };
+		A068FC632032B6900028219F /* SnakepitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068FC622032B6900028219F /* SnakepitTests.swift */; };
 		A068FC652032B6900028219F /* Slash.h in Headers */ = {isa = PBXBuildFile; fileRef = A068FC572032B6900028219F /* Slash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A068FC6F2032B6A40028219F /* StoryboardGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068FC6E2032B6A40028219F /* StoryboardGettable.swift */; };
 		A068FC702032B6A40028219F /* StoryboardGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068FC6E2032B6A40028219F /* StoryboardGettable.swift */; };
@@ -35,11 +35,11 @@
 		A060C1B12032D1BC0044E83B /* TableViewCellGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellGettable.swift; sourceTree = "<group>"; };
 		A060C1B32032D4CE0044E83B /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
 		A060C1B52032D4F70044E83B /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
-		A068FC542032B6900028219F /* Slash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A068FC542032B6900028219F /* Snakepit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snakepit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A068FC572032B6900028219F /* Slash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Slash.h; sourceTree = "<group>"; };
 		A068FC582032B6900028219F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A068FC5D2032B6900028219F /* SlashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A068FC622032B6900028219F /* SlashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlashTests.swift; sourceTree = "<group>"; };
+		A068FC5D2032B6900028219F /* SnakepitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakepitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A068FC622032B6900028219F /* SnakepitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakepitTests.swift; sourceTree = "<group>"; };
 		A068FC642032B6900028219F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A068FC6E2032B6A40028219F /* StoryboardGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardGettable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A068FC5E2032B6900028219F /* Slash.framework in Frameworks */,
+				A068FC5E2032B6900028219F /* Snakepit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +77,8 @@
 		A068FC4A2032B6900028219F = {
 			isa = PBXGroup;
 			children = (
-				A068FC562032B6900028219F /* Slash */,
-				A068FC612032B6900028219F /* SlashTests */,
+				A068FC562032B6900028219F /* Snakepit */,
+				A068FC612032B6900028219F /* SnakepitTests */,
 				A068FC552032B6900028219F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,13 +86,13 @@
 		A068FC552032B6900028219F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A068FC542032B6900028219F /* Slash.framework */,
-				A068FC5D2032B6900028219F /* SlashTests.xctest */,
+				A068FC542032B6900028219F /* Snakepit.framework */,
+				A068FC5D2032B6900028219F /* SnakepitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A068FC562032B6900028219F /* Slash */ = {
+		A068FC562032B6900028219F /* Snakepit */ = {
 			isa = PBXGroup;
 			children = (
 				A068FC572032B6900028219F /* Slash.h */,
@@ -100,17 +100,17 @@
 				A068FC6E2032B6A40028219F /* StoryboardGettable.swift */,
 				A060C1B12032D1BC0044E83B /* TableViewCellGettable.swift */,
 			);
-			path = Slash;
+			path = Snakepit;
 			sourceTree = "<group>";
 		};
-		A068FC612032B6900028219F /* SlashTests */ = {
+		A068FC612032B6900028219F /* SnakepitTests */ = {
 			isa = PBXGroup;
 			children = (
 				A060C1B02032D06B0044E83B /* Storyboard */,
-				A068FC622032B6900028219F /* SlashTests.swift */,
+				A068FC622032B6900028219F /* SnakepitTests.swift */,
 				A068FC642032B6900028219F /* Info.plist */,
 			);
-			path = SlashTests;
+			path = SnakepitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +127,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A068FC532032B6900028219F /* Slash */ = {
+		A068FC532032B6900028219F /* Snakepit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A068FC682032B6910028219F /* Build configuration list for PBXNativeTarget "Slash" */;
+			buildConfigurationList = A068FC682032B6910028219F /* Build configuration list for PBXNativeTarget "Snakepit" */;
 			buildPhases = (
 				A068FC4F2032B6900028219F /* Sources */,
 				A068FC502032B6900028219F /* Frameworks */,
@@ -140,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = Slash;
+			name = Snakepit;
 			productName = Slash;
-			productReference = A068FC542032B6900028219F /* Slash.framework */;
+			productReference = A068FC542032B6900028219F /* Snakepit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A068FC5C2032B6900028219F /* SlashTests */ = {
+		A068FC5C2032B6900028219F /* SnakepitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A068FC6B2032B6910028219F /* Build configuration list for PBXNativeTarget "SlashTests" */;
+			buildConfigurationList = A068FC6B2032B6910028219F /* Build configuration list for PBXNativeTarget "SnakepitTests" */;
 			buildPhases = (
 				A068FC592032B6900028219F /* Sources */,
 				A068FC5A2032B6900028219F /* Frameworks */,
@@ -158,9 +158,9 @@
 			dependencies = (
 				A068FC602032B6900028219F /* PBXTargetDependency */,
 			);
-			name = SlashTests;
+			name = SnakepitTests;
 			productName = SlashTests;
-			productReference = A068FC5D2032B6900028219F /* SlashTests.xctest */;
+			productReference = A068FC5D2032B6900028219F /* SnakepitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -184,7 +184,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A068FC4E2032B6900028219F /* Build configuration list for PBXProject "Slash" */;
+			buildConfigurationList = A068FC4E2032B6900028219F /* Build configuration list for PBXProject "Snakepit" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -196,8 +196,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A068FC532032B6900028219F /* Slash */,
-				A068FC5C2032B6900028219F /* SlashTests */,
+				A068FC532032B6900028219F /* Snakepit */,
+				A068FC5C2032B6900028219F /* SnakepitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,7 +238,7 @@
 				A068FC702032B6A40028219F /* StoryboardGettable.swift in Sources */,
 				A060C1B62032D4F70044E83B /* TestCell.swift in Sources */,
 				A060C1AD2032CF9A0044E83B /* TestViewController.swift in Sources */,
-				A068FC632032B6900028219F /* SlashTests.swift in Sources */,
+				A068FC632032B6900028219F /* SnakepitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +247,7 @@
 /* Begin PBXTargetDependency section */
 		A068FC602032B6900028219F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A068FC532032B6900028219F /* Slash */;
+			target = A068FC532032B6900028219F /* Snakepit */;
 			targetProxy = A068FC5F2032B6900028219F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -302,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -356,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -377,8 +377,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Slash/Info.plist;
+				INFOPLIST_FILE = Snakepit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.x52.Slash;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -400,8 +401,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Slash/Info.plist;
+				INFOPLIST_FILE = Snakepit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.x52.Slash;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -417,7 +419,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z63N39FV7;
-				INFOPLIST_FILE = SlashTests/Info.plist;
+				INFOPLIST_FILE = SnakepitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.x52.SlashTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,7 +434,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z63N39FV7;
-				INFOPLIST_FILE = SlashTests/Info.plist;
+				INFOPLIST_FILE = SnakepitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.x52.SlashTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +446,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A068FC4E2032B6900028219F /* Build configuration list for PBXProject "Slash" */ = {
+		A068FC4E2032B6900028219F /* Build configuration list for PBXProject "Snakepit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A068FC662032B6900028219F /* Debug */,
@@ -453,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A068FC682032B6910028219F /* Build configuration list for PBXNativeTarget "Slash" */ = {
+		A068FC682032B6910028219F /* Build configuration list for PBXNativeTarget "Snakepit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A068FC692032B6910028219F /* Debug */,
@@ -462,7 +464,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A068FC6B2032B6910028219F /* Build configuration list for PBXNativeTarget "SlashTests" */ = {
+		A068FC6B2032B6910028219F /* Build configuration list for PBXNativeTarget "SnakepitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A068FC6C2032B6910028219F /* Debug */,

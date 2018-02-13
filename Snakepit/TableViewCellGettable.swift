@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 public protocol TableViewCellGettable {
   func register<T: UITableViewCell>(cell: T.Type)

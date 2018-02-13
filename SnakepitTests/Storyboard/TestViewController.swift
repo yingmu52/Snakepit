@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Slash
+import Snakepit
 
 class TestViewController: UIViewController {
   var testNumber: Int {

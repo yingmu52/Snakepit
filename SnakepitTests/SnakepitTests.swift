@@ -7,9 +7,9 @@
 //
 
 import XCTest
-import Slash
+import Snakepit
 
-class SlashTests: XCTestCase {
+class SnakepitTests: XCTestCase {
 
   override func setUp() {
     super.setUp()
