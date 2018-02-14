@@ -20,12 +20,16 @@ class SnakepitTests: XCTestCase {
   }
 
   func testStoryboardGettable() {
-    enum Story: String, StoryboardGettable {
+    enum Story: String, StoryboardGettable, StoryboardCrossBundleGettable {
+      var bundle: Bundle? {
+        return Bundle.init(for: TableViewController.self)
+      }
       case Main
     }
     let viewController = Story.Main.get(TestViewController.self)
     XCTAssertNotNil(viewController)
     XCTAssertEqual(viewController.testNumber, 10)
+    XCTAssertNotNil(Story.Main.instantiateInitialViewController)
   }
 
   func testTableViewCellGettable() {
