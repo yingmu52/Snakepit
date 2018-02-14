@@ -2,12 +2,9 @@ import Foundation
 import UIKit
 
 public protocol StoryboardGettable {
-  func get<T: UIViewController>(_ type: T.Type) -> T
-}
-
-public protocol StoryboardCrossBundleGettable {
   var bundle: Bundle? { get }
-  var instantiateInitialViewController: UIViewController { get }
+  func get<T: UIViewController>(_ type: T.Type) -> T
+  var initialViewController: UIViewController { get }
 }
 
 private extension UIViewController {
@@ -24,11 +21,8 @@ public extension StoryboardGettable where Self: RawRepresentable, Self.RawValue 
     }
     return viewController
   }
-}
 
-public extension StoryboardGettable
-where Self: RawRepresentable & StoryboardCrossBundleGettable, Self.RawValue == String {
-  public var instantiateInitialViewController: UIViewController {
+  public var initialViewController: UIViewController {
     let story = UIStoryboard(name: rawValue, bundle: bundle)
     guard let viewController = story.instantiateInitialViewController() else {
       fatalError("This view controller does not exist in the storyboard")
