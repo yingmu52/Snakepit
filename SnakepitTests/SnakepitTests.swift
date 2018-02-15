@@ -19,13 +19,14 @@ class SnakepitTests: XCTestCase {
     super.tearDown()
   }
 
-  func testStoryboardGettable() {
-    enum Story: String, StoryboardGettable {
-      var bundle: Bundle? {
-        return Bundle.init(for: TableViewController.self)
-      }
-      case Main
+  enum Story: String, StoryboardGettable {
+    var bundle: Bundle? {
+      return Bundle.init(for: TableViewController.self)
     }
+    case Main
+  }
+
+  func testStoryboardGettable() {
     let viewController = Story.Main.get(TestViewController.self)
     XCTAssertNotNil(viewController)
     XCTAssertEqual(viewController.testNumber, 10)
@@ -34,11 +35,8 @@ class SnakepitTests: XCTestCase {
 
   func testTableViewCellGettable() {
     let controller = TableViewController(style: .plain)
-    guard  let tableView = controller.tableView else {
-      return XCTFail()
-    }
     let indexPath = IndexPath(row: 99, section: 0)
-    let cell = tableView.deque(cell: TestCell.self, for: indexPath)
+    let cell = controller.tableView.deque(cell: TestCell.self, for: indexPath)
     XCTAssertNotNil(cell)
   }
 }

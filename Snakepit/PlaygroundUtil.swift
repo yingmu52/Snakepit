@@ -32,7 +32,7 @@ public extension UIViewController {
       child.view.leadingAnchor.constraint(equalTo: parent.view.leadingAnchor),
       child.view.trailingAnchor.constraint(equalTo: parent.view.trailingAnchor),
       child.view.bottomAnchor.constraint(equalTo: parent.view.bottomAnchor),
-      child.view.topAnchor.constraint(equalTo: parent.view.topAnchor),
+      child.view.topAnchor.constraint(equalTo: parent.view.topAnchor)
       ])
 
     return parent
