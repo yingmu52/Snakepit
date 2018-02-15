@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A040AED72035594200CB7CDA /* PlaygroundUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040AED62035594200CB7CDA /* PlaygroundUtil.swift */; };
 		A060C1AD2032CF9A0044E83B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060C1AC2032CF9A0044E83B /* TestViewController.swift */; };
 		A060C1AF2032D0310044E83B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A060C1AE2032D0310044E83B /* Main.storyboard */; };
 		A060C1B22032D1BC0044E83B /* TableViewCellGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060C1B12032D1BC0044E83B /* TableViewCellGettable.swift */; };
@@ -16,7 +17,6 @@
 		A068FC632032B6900028219F /* SnakepitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068FC622032B6900028219F /* SnakepitTests.swift */; };
 		A068FC652032B6900028219F /* Slash.h in Headers */ = {isa = PBXBuildFile; fileRef = A068FC572032B6900028219F /* Slash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A068FC6F2032B6A40028219F /* StoryboardGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068FC6E2032B6A40028219F /* StoryboardGettable.swift */; };
-		A068FC702032B6A40028219F /* StoryboardGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068FC6E2032B6A40028219F /* StoryboardGettable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A040AED62035594200CB7CDA /* PlaygroundUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundUtil.swift; sourceTree = "<group>"; };
 		A060C1AC2032CF9A0044E83B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A060C1AE2032D0310044E83B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A060C1B12032D1BC0044E83B /* TableViewCellGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellGettable.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 				A068FC582032B6900028219F /* Info.plist */,
 				A068FC6E2032B6A40028219F /* StoryboardGettable.swift */,
 				A060C1B12032D1BC0044E83B /* TableViewCellGettable.swift */,
+				A040AED62035594200CB7CDA /* PlaygroundUtil.swift */,
 			);
 			path = Snakepit;
 			sourceTree = "<group>";
@@ -228,6 +230,7 @@
 			files = (
 				A068FC6F2032B6A40028219F /* StoryboardGettable.swift in Sources */,
 				A060C1B22032D1BC0044E83B /* TableViewCellGettable.swift in Sources */,
+				A040AED72035594200CB7CDA /* PlaygroundUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A068FC702032B6A40028219F /* StoryboardGettable.swift in Sources */,
 				A060C1B62032D4F70044E83B /* TestCell.swift in Sources */,
 				A060C1AD2032CF9A0044E83B /* TestViewController.swift in Sources */,
 				A068FC632032B6900028219F /* SnakepitTests.swift in Sources */,
