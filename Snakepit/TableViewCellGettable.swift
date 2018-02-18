@@ -6,14 +6,16 @@ public protocol TableViewCellGettable {
   func deque<T: UITableViewCell>(cell: T.Type, for indexPath: IndexPath) -> T
 }
 
-public extension TableViewCellGettable where Self: UITableView {
-  func register<T: UITableViewCell>(cell: T.Type) {
-    let nib = UINib(nibName: cell.identifier, bundle: Bundle(for: cell))
-    register(nib, forCellReuseIdentifier: cell.identifier)
+extension UITableView: TableViewCellGettable {
+  public func register<T: UITableViewCell>(cell: T.Type) {
+    guard let nib = cell.nib else {
+      return register(cell, forCellReuseIdentifier: cell.reuseId)
+    }
+    register(nib, forCellReuseIdentifier: cell.reuseId)
   }
 
-  func deque<T: UITableViewCell>(cell: T.Type, for indexPath: IndexPath) -> T {
-    guard let cell = dequeueReusableCell(withIdentifier: cell.identifier, for: indexPath) as? T else {
+  public func deque<T: UITableViewCell>(cell: T.Type, for indexPath: IndexPath) -> T {
+    guard let cell = dequeueReusableCell(withIdentifier: cell.reuseId, for: indexPath) as? T else {
       fatalError("dequeueReusableCell fail")
     }
     return cell
@@ -21,7 +23,13 @@ public extension TableViewCellGettable where Self: UITableView {
 }
 
 private extension UITableViewCell {
-  static var identifier: String {
+  static var reuseId: String {
     return String(describing: self)
+  }
+
+  static var nib: UINib? {
+    let bundle = Bundle(for: self)
+    guard bundle.path(forResource: reuseId, ofType: "xib") != nil else { return nil }
+    return UINib(nibName: reuseId, bundle: Bundle(for: self))
   }
 }

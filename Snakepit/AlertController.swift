@@ -1,19 +1,19 @@
 import Foundation
 import UIKit
 
-public extension UIViewController {
+extension UIViewController {
   public func showAlert(
     title: String,
     message: String? = nil,
-    actions: [(String, UIAlertActionStyle)]? = nil,
+    actions: [AlertButtonType]? = nil,
     type: UIAlertControllerStyle? = nil,
-    didSelectAlertAction: ((UIAlertAction) -> Void)? = nil)
+    didSelect: ((UIAlertAction) -> Void)? = nil)
     -> UIAlertController {
 
       let alertController = UIAlertController(title: title, message: message, preferredStyle: type ?? .alert)
-      for (title, style) in actions ?? [("OK", .default)] {
-        let action = UIAlertAction(title: title, style: style) {
-          didSelectAlertAction?($0)
+      (actions ?? [.ok]).forEach {
+        let action = UIAlertAction(title: $0.description, style: $0.type) {
+          didSelect?($0)
         }
         alertController.addAction(action)
       }
@@ -25,20 +25,53 @@ public extension UIViewController {
     title: String,
     message: String? = nil,
     textFieldPlaceholder: String,
-    actions: [(String, UIAlertActionStyle)]? = nil,
+    actions: [AlertButtonType]? = nil,
     type: UIAlertControllerStyle? = nil,
-    didSelectAlertActionWithText: @escaping (UIAlertAction, String) -> Void)
+    didSelectWithText: @escaping (UIAlertAction, String) -> Void)
     -> UIAlertController {
 
       let alertController = UIAlertController(title: title, message: message, preferredStyle: type ?? .alert)
-      for (title, style) in actions ?? [("OK", .default)] {
-        let action = UIAlertAction(title: title, style: style) {
-          didSelectAlertActionWithText($0, alertController.textFields?.last?.text ?? "")
+      (actions ?? [.ok]).forEach {
+        let action = UIAlertAction(title: $0.description, style: $0.type) {
+          didSelectWithText($0, alertController.textFields?.last?.text ?? "")
         }
         alertController.addAction(action)
       }
       alertController.addTextField { $0.placeholder = textFieldPlaceholder }
       present(alertController, animated: true, completion: nil)
       return alertController
+  }
+}
+
+public enum AlertButtonType: CustomStringConvertible {
+  case ok
+  case cancel
+  case done
+  case delete
+  case dismiss
+  case custom(String, UIAlertActionStyle)
+
+  var type: UIAlertActionStyle {
+    switch self {
+    case .ok, .done:
+      return .default
+    case .cancel, .dismiss:
+      return .cancel
+    case .delete  :
+      return .destructive
+    case .custom(_, let style):
+      return style
+    }
+  }
+
+  public var description: String {
+    switch self {
+    case .ok: return "OK"
+    case .cancel: return "Cancel"
+    case .done: return "Done"
+    case .delete: return "Delete"
+    case .dismiss: return "Dismiss"
+    case .custom(let title, _): return title
+    }
   }
 }

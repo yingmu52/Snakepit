@@ -15,8 +15,6 @@ class TestViewController: UIViewController {
   }
 }
 
-extension UITableView: TableViewCellGettable {}
-
 class TableViewController: UITableViewController {
   override init(style: UITableViewStyle) {
     super.init(style: style)
