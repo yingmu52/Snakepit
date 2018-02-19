@@ -13,7 +13,7 @@ extension UITableView: TableViewCellGettable {
     }
     register(nib, forCellReuseIdentifier: cell.reuseId)
   }
-
+  
   public func deque<T: UITableViewCell>(cell: T.Type, for indexPath: IndexPath) -> T {
     guard let cell = dequeueReusableCell(withIdentifier: cell.reuseId, for: indexPath) as? T else {
       fatalError("dequeueReusableCell fail")
@@ -22,14 +22,14 @@ extension UITableView: TableViewCellGettable {
   }
 }
 
-private extension UITableViewCell {
+extension UITableViewCell {
   static var reuseId: String {
     return String(describing: self)
   }
-
+  
   static var nib: UINib? {
     let bundle = Bundle(for: self)
-    guard bundle.path(forResource: reuseId, ofType: "xib") != nil else { return nil }
+    guard bundle.path(forResource: reuseId, ofType: "nib") != nil else { return nil }
     return UINib(nibName: reuseId, bundle: Bundle(for: self))
   }
 }

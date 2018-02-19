@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import Snakepit
+@testable import Snakepit
 
 class SnakepitTests: XCTestCase {
 
@@ -38,6 +38,7 @@ class SnakepitTests: XCTestCase {
     let indexPath = IndexPath(row: 99, section: 0)
     let cell = controller.tableView.deque(cell: TestCell.self, for: indexPath)
     XCTAssertNotNil(cell)
+    XCTAssertNotNil(TestCell.nib)
   }
 
   func testAlertController() {
