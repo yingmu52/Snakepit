@@ -19,6 +19,7 @@
 		A068FC6F2032B6A40028219F /* StoryboardGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068FC6E2032B6A40028219F /* StoryboardGettable.swift */; };
 		A0A4F9F32038FB1500673FBA /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4F9F22038FB1500673FBA /* AlertController.swift */; };
 		A0A4F9F620391D8E00673FBA /* SnakepitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4F9F520391D8E00673FBA /* SnakepitTableViewController.swift */; };
+		A0C0301A2041E6D6009BC3FD /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C030192041E6D6009BC3FD /* TargetAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A068FC6E2032B6A40028219F /* StoryboardGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardGettable.swift; sourceTree = "<group>"; };
 		A0A4F9F22038FB1500673FBA /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		A0A4F9F520391D8E00673FBA /* SnakepitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakepitTableViewController.swift; sourceTree = "<group>"; };
+		A0C030192041E6D6009BC3FD /* TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				A068FC572032B6900028219F /* Slash.h */,
 				A068FC582032B6900028219F /* Info.plist */,
+				A0C030192041E6D6009BC3FD /* TargetAction.swift */,
 				A0A4F9F22038FB1500673FBA /* AlertController.swift */,
 				A068FC6E2032B6A40028219F /* StoryboardGettable.swift */,
 				A060C1B12032D1BC0044E83B /* TableViewCellGettable.swift */,
@@ -254,6 +257,7 @@
 			files = (
 				A0A4F9F620391D8E00673FBA /* SnakepitTableViewController.swift in Sources */,
 				A0A4F9F32038FB1500673FBA /* AlertController.swift in Sources */,
+				A0C0301A2041E6D6009BC3FD /* TargetAction.swift in Sources */,
 				A068FC6F2032B6A40028219F /* StoryboardGettable.swift in Sources */,
 				A060C1B22032D1BC0044E83B /* TableViewCellGettable.swift in Sources */,
 				A040AED72035594200CB7CDA /* PlaygroundUtil.swift in Sources */,

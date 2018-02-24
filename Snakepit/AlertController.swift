@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 extension UIViewController {
-  public func showAlert(
+  @discardableResult public func showAlert(
     title: String,
     message: String? = nil,
     actions: [AlertButtonType]? = nil,
@@ -21,7 +21,7 @@ extension UIViewController {
       return alertController
   }
   
-  public func showAlert(
+  @discardableResult public func showAlert(
     title: String,
     message: String? = nil,
     textFieldPlaceholder: String,
