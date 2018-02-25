@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A019012120427C9400121A09 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A019012020427C9400121A09 /* UIColor.swift */; };
 		A040AED72035594200CB7CDA /* PlaygroundUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040AED62035594200CB7CDA /* PlaygroundUtil.swift */; };
 		A060C1AD2032CF9A0044E83B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060C1AC2032CF9A0044E83B /* TestViewController.swift */; };
 		A060C1AF2032D0310044E83B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A060C1AE2032D0310044E83B /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A019012020427C9400121A09 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		A040AED62035594200CB7CDA /* PlaygroundUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundUtil.swift; sourceTree = "<group>"; };
 		A060C1AC2032CF9A0044E83B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A060C1AE2032D0310044E83B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				A068FC572032B6900028219F /* Slash.h */,
 				A068FC582032B6900028219F /* Info.plist */,
+				A019012020427C9400121A09 /* UIColor.swift */,
 				A0C030192041E6D6009BC3FD /* TargetAction.swift */,
 				A0FB43E520425498006D1D48 /* UserDefaultsGettable.swift */,
 				A0A4F9F22038FB1500673FBA /* AlertController.swift */,
@@ -263,6 +266,7 @@
 				A0A4F9F32038FB1500673FBA /* AlertController.swift in Sources */,
 				A0C0301A2041E6D6009BC3FD /* TargetAction.swift in Sources */,
 				A068FC6F2032B6A40028219F /* StoryboardGettable.swift in Sources */,
+				A019012120427C9400121A09 /* UIColor.swift in Sources */,
 				A060C1B22032D1BC0044E83B /* TableViewCellGettable.swift in Sources */,
 				A040AED72035594200CB7CDA /* PlaygroundUtil.swift in Sources */,
 			);
