@@ -130,4 +130,16 @@ class SnakepitTests: XCTestCase {
     XCTAssertTrue(UIColor(0x0000FF).rgb == UIColor.blue.rgb)
     XCTAssertTrue(UIColor(0xFF7F00).rgb == UIColor.orange.rgb)
   }
+
+  enum JSFunc: String, JavaScriptRunnable {
+    case example
+    var bundle: Bundle {
+      return Bundle(for: TableViewController.self)
+    }
+  }
+
+  func testJavaScriptRunnable() {
+    let result = JSFunc.example.run(args: ["fuck", "you", "bitch"])?.toString()
+    XCTAssertEqual(result, "fuckyoubitch")
+  }
 }

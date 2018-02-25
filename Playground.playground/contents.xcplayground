@@ -3,5 +3,6 @@
     <pages>
         <page name='GenericTableViewController'/>
         <page name='TargetAction'/>
+        <page name='JavaScript'/>
     </pages>
 </playground>
