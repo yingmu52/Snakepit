@@ -86,4 +86,41 @@ class SnakepitTests: XCTestCase {
     }
     XCTAssertTrue(selectedItem.count == 0)
   }
+
+  enum RegisteredKey: String, UserDefaultsGettable {
+    case a
+    case b
+    case c
+    case d
+    static var bundle: Bundle {
+      let bundle = Bundle(for: TableViewController.self)
+      print(String(describing: bundle.bundleIdentifier))
+      return bundle
+    }
+  }
+
+  func testUserDefault() {
+    RegisteredKey.a.set(userDefault: true)
+    XCTAssertNil(RegisteredKey.a.get(userDefault: String.self))
+    XCTAssertEqual(RegisteredKey.a.get(userDefault: Bool.self), true)
+    XCTAssertNil(RegisteredKey.b.get(userDefault: String.self))
+
+    RegisteredKey.c.set(userDefault: "hiss")
+    XCTAssertEqual(RegisteredKey.c.get(userDefault: String.self), "hiss")
+
+    let array = ["a", "b"]
+    RegisteredKey.d.set(userDefault: array)
+    XCTAssertEqual(RegisteredKey.c.get(userDefault: [String].self)!, array)
+
+    RegisteredKey.a.remove()
+    RegisteredKey.b.remove()
+    RegisteredKey.c.remove()
+    RegisteredKey.d.remove()
+
+    XCTAssertNil(RegisteredKey.a.get(userDefault: Bool.self))
+    XCTAssertNil(RegisteredKey.b.get(userDefault: String.self))
+    XCTAssertNil(RegisteredKey.c.get(userDefault: String.self))
+    XCTAssertNil(RegisteredKey.d.get(userDefault: [String].self))
+    print(UserDefaults.standard.dictionaryRepresentation())
+  }
 }
