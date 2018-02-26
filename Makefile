@@ -24,5 +24,9 @@ bootstrap:
 	sudo pip uninstall pip
 	sudo easy_install pip
 	sudo pip install --upgrade bumpversion
+	sudo brew install xctool
+
+test:
+	xctool -workspace Snakepit.xcworkspace -scheme Snakepit -sdk iphonesimulator run-tests
 
 release: bump commit pod-deploy

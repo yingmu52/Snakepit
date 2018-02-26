@@ -1,5 +1,6 @@
-language: swift
-osx_image: xcode9.2
+language: objective-c
+osx_image: xcode9
+xcode_sdk: iphonesimulator10.0
 
 branches:
   only:
@@ -7,9 +8,9 @@ branches:
 
 before_install:
   - gem install xcpretty -N
-  - brew update
-  - brew install swiftlint || true
+
 script:
-  - xcodebuild -workspace Snakepit.xcworkspace -scheme Snakepit -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
-  - swiftlint
+- set -o pipefail
+- travis_retry xcodebuild -workspace Snakepit.xcworkspace -scheme Snakepit -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+
 
