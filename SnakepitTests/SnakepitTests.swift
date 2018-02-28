@@ -94,7 +94,6 @@ class SnakepitTests: XCTestCase {
     case d
     static var bundle: Bundle {
       let bundle = Bundle(for: TableViewController.self)
-      print(String(describing: bundle.bundleIdentifier))
       return bundle
     }
   }
@@ -121,6 +120,24 @@ class SnakepitTests: XCTestCase {
     XCTAssertNil(RegisteredKey.b.get(userDefault: String.self))
     XCTAssertNil(RegisteredKey.c.get(userDefault: String.self))
     XCTAssertNil(RegisteredKey.d.get(userDefault: [String].self))
-    print(UserDefaults.standard.dictionaryRepresentation())
+  }
+
+  func testUIColorExt() {
+    XCTAssertTrue(UIColor(0xFF0000).rgb == UIColor.red.rgb)
+    XCTAssertTrue(UIColor(0x00FF00).rgb == UIColor.green.rgb)
+    XCTAssertTrue(UIColor(0x0000FF).rgb == UIColor.blue.rgb)
+    XCTAssertTrue(UIColor(0xFF7F00).rgb == UIColor.orange.rgb)
+  }
+
+  enum JSFunc: String, JavaScriptRunnable {
+    case example
+    var bundle: Bundle {
+      return Bundle(for: TableViewController.self)
+    }
+  }
+
+  func testJavaScriptRunnable() {
+    let result = JSFunc.example.run(args: ["fuck", "you", "bitch"])?.toString()!
+    XCTAssertEqual(result, "fuckyoubitch")
   }
 }
