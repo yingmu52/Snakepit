@@ -3,7 +3,7 @@ import UIKit
 
 extension UIColor {
   /// Convert Hex to UIColor i.e UIColor(0xFF0000), default alpha = 1
-  convenience init(_ hex: UInt32, alpha: CGFloat = 1) {
+  public convenience init(_ hex: UInt32, alpha: CGFloat = 1) {
     let divisor = CGFloat(255)
     let r = CGFloat((hex & 0xFF0000) >> 16) / divisor
     let g = CGFloat((hex & 0x00FF00) >> 8 ) / divisor
