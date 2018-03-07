@@ -59,6 +59,13 @@ class SnakepitTests: XCTestCase {
     XCTAssertEqual(alert4.textFields?.last?.placeholder, "12345")
   }
 
+  func testGenericTableViewControllerBasicUsage() {
+    _ = SnakepitTableViewController(dataSource: [1, 2, 3]) { (cell, num) in
+      cell.textLabel?.text = num.description
+      cell.detailTextLabel?.text = num.description
+    }
+  }
+
   func testGenericTableViewController() {
     var data = [String]()
     for ind in 0...9 {
