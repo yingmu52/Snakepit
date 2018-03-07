@@ -30,8 +30,6 @@ extension UITableViewCell {
   static var nib: UINib? {
     let bundle = Bundle(for: self)
     guard bundle.path(forResource: reuseId, ofType: "nib") != nil else { return nil }
-//    guard let nibs = bundle.loadNibNamed(reuseId, owner: nil, options: nil),
-//      nibs.count > 0 else { return nil }
     return UINib(nibName: reuseId, bundle: bundle)
   }
 }
