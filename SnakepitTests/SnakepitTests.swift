@@ -106,27 +106,27 @@ class SnakepitTests: XCTestCase {
   }
 
   func testUserDefault() {
-    RegisteredKey.a.set(userDefault: true)
-    XCTAssertNil(RegisteredKey.a.get(userDefault: String.self))
-    XCTAssertEqual(RegisteredKey.a.get(userDefault: Bool.self), true)
-    XCTAssertNil(RegisteredKey.b.get(userDefault: String.self))
+    RegisteredKey.a.set(true)
+    XCTAssertNil(RegisteredKey.a.get(String.self))
+    XCTAssertEqual(RegisteredKey.a.get(Bool.self), true)
+    XCTAssertNil(RegisteredKey.b.get(String.self))
 
-    RegisteredKey.c.set(userDefault: "hiss")
-    XCTAssertEqual(RegisteredKey.c.get(userDefault: String.self), "hiss")
+    RegisteredKey.c.set("hiss")
+    XCTAssertEqual(RegisteredKey.c.get(String.self), "hiss")
 
     let array = ["a", "b"]
-    RegisteredKey.d.set(userDefault: array)
-    XCTAssertEqual(RegisteredKey.c.get(userDefault: [String].self)!, array)
+    RegisteredKey.d.set(array)
+    XCTAssertEqual(RegisteredKey.c.get([String].self)!, array)
 
     RegisteredKey.a.remove()
     RegisteredKey.b.remove()
     RegisteredKey.c.remove()
     RegisteredKey.d.remove()
 
-    XCTAssertNil(RegisteredKey.a.get(userDefault: Bool.self))
-    XCTAssertNil(RegisteredKey.b.get(userDefault: String.self))
-    XCTAssertNil(RegisteredKey.c.get(userDefault: String.self))
-    XCTAssertNil(RegisteredKey.d.get(userDefault: [String].self))
+    XCTAssertNil(RegisteredKey.a.get(Bool.self))
+    XCTAssertNil(RegisteredKey.b.get(String.self))
+    XCTAssertNil(RegisteredKey.c.get(String.self))
+    XCTAssertNil(RegisteredKey.d.get([String].self))
   }
 
   func testUIColorExt() {
