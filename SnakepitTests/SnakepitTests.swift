@@ -147,4 +147,30 @@ class SnakepitTests: XCTestCase {
     let result = JSFunc.example.run(args: ["fuck", "you", "bitch"])?.toString()!
     XCTAssertEqual(result, "fuckyoubitch")
   }
+
+  func testPrettyDateString() {
+    func dateFromString(_ s: String) -> Date {
+      let dateFormatter = DateFormatter()
+      dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+      dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+      return dateFormatter.date(from: s)!
+    }
+
+    let now = dateFromString("2016-04-14T00:00:00+0000")
+    let dates = [
+      "2016-04-14T00:00:59+0000",
+      "2016-04-14T00:01:59+0000",
+      "2016-04-14T00:05:52+0000",
+      "2016-04-14T01:59:59+0000",
+      "2016-04-14T03:52:52+0000",
+      "2016-04-19T00:00:00+0000"
+      ]
+      .map { (s) -> Date in return dateFromString(s) }
+    XCTAssertEqual(Date.prettyDatetestable(now: dates[0], target: now), "Just Now")
+    XCTAssertEqual(Date.prettyDatetestable(now: dates[1], target: now), "1 minute ago")
+    XCTAssertEqual(Date.prettyDatetestable(now: dates[2], target: now), "5 minutes ago")
+    XCTAssertEqual(Date.prettyDatetestable(now: dates[3], target: now), "1 hour ago")
+    XCTAssertEqual(Date.prettyDatetestable(now: dates[4], target: now), "3 hours ago")
+    XCTAssertEqual(Date.prettyDatetestable(now: dates[5], target: now), "5 days ago")
+  }
 }
