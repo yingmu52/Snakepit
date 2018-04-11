@@ -17,16 +17,19 @@ public extension UIAlertController {
 }
 
 public extension UIAlertController {
+  @discardableResult
   public func action(title: String, handler: (() -> Void)? = nil) -> UIAlertController {
     addAction(title: title, style: .default) { _ in handler?() }
     return self
   }
 
+  @discardableResult
   public func cancelAction(title: String, handler: (() -> Void)? = nil) -> UIAlertController {
     addAction(title: title, style: .cancel) { _ in handler?() }
     return self
   }
 
+  @discardableResult
   public func destructiveAction(title: String, handler: (() -> Void)? = nil) -> UIAlertController {
     addAction(title: title, style: .destructive) { _ in handler?() }
     return self
@@ -35,12 +38,14 @@ public extension UIAlertController {
 
 extension UIViewController {
 
+  @discardableResult
   public func showAlert(_ name: String, message: String? = nil) -> UIAlertController {
     let alertController = UIAlertController.alert(name, message: message)
     present(alertController, animated: true, completion: nil)
     return alertController
   }
 
+  @discardableResult
   public func showActionSheet(_ name: String, message: String? = nil) -> UIAlertController {
     let alertController = UIAlertController.sheet(name, message: message)
     present(alertController, animated: true, completion: nil)
