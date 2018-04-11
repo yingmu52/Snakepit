@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "Snakepit"
-  s.version = "0.0.12"
+  s.version = "0.0.13"
   s.summary = "iOS Dev Tool Kit"
   s.description = <<-DESC
   				   Some useful tool to for iOS development
