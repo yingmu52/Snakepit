@@ -28,6 +28,7 @@
 		A0FB43E620425498006D1D48 /* UserDefaultsGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB43E520425498006D1D48 /* UserDefaultsGettable.swift */; };
 		AE5AAA5120A614E6009A216B /* BlockchainLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AAA5020A614E6009A216B /* BlockchainLayout.swift */; };
 		AE5AAA5320A61520009A216B /* WaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AAA5220A61520009A216B /* WaterFallLayout.swift */; };
+		AE5AAA5F20A65BAC009A216B /* SnakepitNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AAA5E20A65BAC009A216B /* SnakepitNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		A0FB43E520425498006D1D48 /* UserDefaultsGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsGettable.swift; sourceTree = "<group>"; };
 		AE5AAA5020A614E6009A216B /* BlockchainLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLayout.swift; sourceTree = "<group>"; };
 		AE5AAA5220A61520009A216B /* WaterFallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallLayout.swift; sourceTree = "<group>"; };
+		AE5AAA5E20A65BAC009A216B /* SnakepitNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakepitNavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				A0A4F9F520391D8E00673FBA /* SnakepitTableViewController.swift */,
 				A0A0BFF4207C6EF4008C53AA /* Date.swift */,
 				A054DA4B207B541600B2CE4E /* EmptyStateView.swift */,
+				AE5AAA5E20A65BAC009A216B /* SnakepitNavigationViewController.swift */,
 			);
 			path = Snakepit;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				A0A569632042A3BE00152821 /* JavaScriptRunnable.swift in Sources */,
 				A0A0BFF5207C6EF4008C53AA /* Date.swift in Sources */,
 				AE5AAA5320A61520009A216B /* WaterFallLayout.swift in Sources */,
+				AE5AAA5F20A65BAC009A216B /* SnakepitNavigationViewController.swift in Sources */,
 				A0A4F9F620391D8E00673FBA /* SnakepitTableViewController.swift in Sources */,
 				A054DA4C207B541600B2CE4E /* EmptyStateView.swift in Sources */,
 				A0FB43E620425498006D1D48 /* UserDefaultsGettable.swift in Sources */,
