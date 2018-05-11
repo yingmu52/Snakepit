@@ -14,13 +14,12 @@ public protocol SnakepitEmptyStateProtocol {
   func hideEmptyState()
 }
 
-public extension SnakepitEmptyStateProtocol where Self: UITableViewController {
-  func showEmptyState() {
+extension SnakepitEmptyStateProtocol where Self: UITableViewController {
+  public func showEmptyState() {
     tableView.backgroundView = emptyStateView
-    tableView.tableFooterView = .init(frame: .zero)
   }
-
-  func hideEmptyState() {
+  
+  public func hideEmptyState() {
     tableView.backgroundView = nil
   }
 }
