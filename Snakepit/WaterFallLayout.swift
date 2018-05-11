@@ -1,12 +1,12 @@
 import UIKit
 
-protocol WaterFallLayoutDelegate: class {
+public protocol WaterFallLayoutDelegate: class {
   func collectionView(_ collectionView: UICollectionView, heightForItemAt IndexPath: IndexPath) -> CGFloat
 }
 
 public class WaterFallLayout: UICollectionViewLayout {
   
-  weak var delegate: WaterFallLayoutDelegate!
+  public weak var delegate: WaterFallLayoutDelegate!
   
   public var numberOfColumns: Int = 2
   public var cellPadding: CGFloat = 8.0
