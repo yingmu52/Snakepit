@@ -1,7 +1,7 @@
 import UIKit
 
-public class SnakepitNavigationViewController: UINavigationController {
-  public override func viewDidLoad() {
+open class SnakepitNavigationViewController: UINavigationController {
+  open override func viewDidLoad() {
     super.viewDidLoad()
     
     let target = interactivePopGestureRecognizer?.delegate
