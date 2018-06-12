@@ -4,7 +4,7 @@ public protocol WaterFallLayoutDelegate: class {
   func collectionView(_ collectionView: UICollectionView, heightForItemAt IndexPath: IndexPath) -> CGFloat
 }
 
-public class WaterFallLayout: UICollectionViewLayout {
+public class WaterFallLayout: UICollectionViewFlowLayout {
   
   public weak var delegate: WaterFallLayoutDelegate!
   
