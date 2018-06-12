@@ -45,7 +45,7 @@ public class WaterFallLayout: UICollectionViewLayout {
       let height = cellPadding * 2 + photoHeight
       let column = i % numberOfColumns
       let frame = CGRect(x: xOffset[column], y: yOffset[column], width: columnWidth, height: height)
-      let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
+      let insetFrame = frame.insetBy(dx: cellPadding * 0.5, dy: cellPadding * 0.5)
       
       let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
       attributes.frame = insetFrame

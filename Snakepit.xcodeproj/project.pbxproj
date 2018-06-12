@@ -25,6 +25,7 @@
 		A0A569632042A3BE00152821 /* JavaScriptRunnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A569622042A3BE00152821 /* JavaScriptRunnable.swift */; };
 		A0A569652042A46300152821 /* example.js in Resources */ = {isa = PBXBuildFile; fileRef = A0A569642042A46300152821 /* example.js */; };
 		A0C0301A2041E6D6009BC3FD /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C030192041E6D6009BC3FD /* TargetAction.swift */; };
+		A0E2D12320CF875900BCBDD0 /* CollectionViewCellGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2D12220CF875900BCBDD0 /* CollectionViewCellGettable.swift */; };
 		A0FB43E620425498006D1D48 /* UserDefaultsGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB43E520425498006D1D48 /* UserDefaultsGettable.swift */; };
 		AE5AAA5120A614E6009A216B /* BlockchainLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AAA5020A614E6009A216B /* BlockchainLayout.swift */; };
 		AE5AAA5320A61520009A216B /* WaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AAA5220A61520009A216B /* WaterFallLayout.swift */; };
@@ -63,6 +64,7 @@
 		A0A569622042A3BE00152821 /* JavaScriptRunnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaScriptRunnable.swift; sourceTree = "<group>"; };
 		A0A569642042A46300152821 /* example.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = example.js; sourceTree = "<group>"; };
 		A0C030192041E6D6009BC3FD /* TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetAction.swift; sourceTree = "<group>"; };
+		A0E2D12220CF875900BCBDD0 /* CollectionViewCellGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellGettable.swift; sourceTree = "<group>"; };
 		A0FB43E520425498006D1D48 /* UserDefaultsGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsGettable.swift; sourceTree = "<group>"; };
 		AE5AAA5020A614E6009A216B /* BlockchainLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLayout.swift; sourceTree = "<group>"; };
 		AE5AAA5220A61520009A216B /* WaterFallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallLayout.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				AE5AAA5220A61520009A216B /* WaterFallLayout.swift */,
 				A068FC6E2032B6A40028219F /* StoryboardGettable.swift */,
 				A060C1B12032D1BC0044E83B /* TableViewCellGettable.swift */,
+				A0E2D12220CF875900BCBDD0 /* CollectionViewCellGettable.swift */,
 				A040AED62035594200CB7CDA /* PlaygroundUtil.swift */,
 				A0A4F9F520391D8E00673FBA /* SnakepitTableViewController.swift */,
 				A0A0BFF4207C6EF4008C53AA /* Date.swift */,
@@ -295,6 +298,7 @@
 				A0C0301A2041E6D6009BC3FD /* TargetAction.swift in Sources */,
 				A068FC6F2032B6A40028219F /* StoryboardGettable.swift in Sources */,
 				A019012120427C9400121A09 /* UIColor.swift in Sources */,
+				A0E2D12320CF875900BCBDD0 /* CollectionViewCellGettable.swift in Sources */,
 				A060C1B22032D1BC0044E83B /* TableViewCellGettable.swift in Sources */,
 				A040AED72035594200CB7CDA /* PlaygroundUtil.swift in Sources */,
 			);
