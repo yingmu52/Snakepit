@@ -3,6 +3,8 @@ import UIKit
 public protocol CollectionViewCellGettable {
   func register<T: UICollectionViewCell>(cell: T.Type)
   func deque<T: UICollectionViewCell>(cell: T.Type, for indexPath: IndexPath) -> T
+  func deque<T: UICollectionReusableView>(header: T.Type, for indexPath: IndexPath) -> T
+  func deque<T: UICollectionReusableView>(footer: T.Type, for indexPath: IndexPath) -> T
 }
 
 extension UICollectionView: CollectionViewCellGettable {
@@ -19,9 +21,27 @@ extension UICollectionView: CollectionViewCellGettable {
     }
     return cell
   }
+
+  public func deque<T>(header: T.Type, for indexPath: IndexPath) -> T where T: UICollectionReusableView {
+    guard let header = dequeueReusableSupplementaryView(
+      ofKind: UICollectionElementKindSectionHeader,
+      withReuseIdentifier: T.reuseId, for: indexPath) as? T else {
+        fatalError("dequeue collection view header fail")
+    }
+    return header
+  }
+
+  public func deque<T>(footer: T.Type, for indexPath: IndexPath) -> T where T: UICollectionReusableView {
+    guard let footer = dequeueReusableSupplementaryView(
+      ofKind: UICollectionElementKindSectionFooter,
+      withReuseIdentifier: T.reuseId, for: indexPath) as? T else {
+        fatalError("dequeue collection view footer fail")
+    }
+    return footer
+  }
 }
 
-extension UICollectionViewCell {
+extension UICollectionReusableView {
   static var reuseId: String {
     return String(describing: self)
   }
