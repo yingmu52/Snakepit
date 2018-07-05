@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A019012120427C9400121A09 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A019012020427C9400121A09 /* UIColor.swift */; };
+		A032479920EDEB1A00325447 /* DataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032479820EDEB1A00325447 /* DataSourceTests.swift */; };
 		A040AED72035594200CB7CDA /* PlaygroundUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040AED62035594200CB7CDA /* PlaygroundUtil.swift */; };
 		A054DA4C207B541600B2CE4E /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A054DA4B207B541600B2CE4E /* EmptyStateView.swift */; };
 		A060C1AD2032CF9A0044E83B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060C1AC2032CF9A0044E83B /* TestViewController.swift */; };
@@ -19,6 +20,8 @@
 		A068FC632032B6900028219F /* SnakepitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068FC622032B6900028219F /* SnakepitTests.swift */; };
 		A068FC652032B6900028219F /* Slash.h in Headers */ = {isa = PBXBuildFile; fileRef = A068FC572032B6900028219F /* Slash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A068FC6F2032B6A40028219F /* StoryboardGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068FC6E2032B6A40028219F /* StoryboardGettable.swift */; };
+		A079C86F20EB3292003685B5 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079C86E20EB3292003685B5 /* DataSource.swift */; };
+		A096D56320F23631006D41EA /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A096D56220F23631006D41EA /* ConfigurableCell.swift */; };
 		A0A0BFF5207C6EF4008C53AA /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A0BFF4207C6EF4008C53AA /* Date.swift */; };
 		A0A4F9F32038FB1500673FBA /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4F9F22038FB1500673FBA /* AlertController.swift */; };
 		A0A4F9F620391D8E00673FBA /* SnakepitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4F9F520391D8E00673FBA /* SnakepitTableViewController.swift */; };
@@ -44,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		A019012020427C9400121A09 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A032479820EDEB1A00325447 /* DataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceTests.swift; sourceTree = "<group>"; };
 		A040AED62035594200CB7CDA /* PlaygroundUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundUtil.swift; sourceTree = "<group>"; };
 		A054DA4B207B541600B2CE4E /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		A060C1AC2032CF9A0044E83B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		A068FC622032B6900028219F /* SnakepitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakepitTests.swift; sourceTree = "<group>"; };
 		A068FC642032B6900028219F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A068FC6E2032B6A40028219F /* StoryboardGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardGettable.swift; sourceTree = "<group>"; };
+		A079C86E20EB3292003685B5 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		A096D56220F23631006D41EA /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
 		A0A0BFF4207C6EF4008C53AA /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		A0A4F9F22038FB1500673FBA /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		A0A4F9F520391D8E00673FBA /* SnakepitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakepitTableViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +145,8 @@
 				A0A0BFF4207C6EF4008C53AA /* Date.swift */,
 				A054DA4B207B541600B2CE4E /* EmptyStateView.swift */,
 				AE5AAA5E20A65BAC009A216B /* SnakepitNavigationViewController.swift */,
+				A079C86E20EB3292003685B5 /* DataSource.swift */,
+				A096D56220F23631006D41EA /* ConfigurableCell.swift */,
 			);
 			path = Snakepit;
 			sourceTree = "<group>";
@@ -146,6 +154,7 @@
 		A068FC612032B6900028219F /* SnakepitTests */ = {
 			isa = PBXGroup;
 			children = (
+				A032479820EDEB1A00325447 /* DataSourceTests.swift */,
 				A0A569642042A46300152821 /* example.js */,
 				A060C1B02032D06B0044E83B /* Storyboard */,
 				A068FC622032B6900028219F /* SnakepitTests.swift */,
@@ -297,8 +306,10 @@
 				A0A4F9F32038FB1500673FBA /* AlertController.swift in Sources */,
 				A0C0301A2041E6D6009BC3FD /* TargetAction.swift in Sources */,
 				A068FC6F2032B6A40028219F /* StoryboardGettable.swift in Sources */,
+				A096D56320F23631006D41EA /* ConfigurableCell.swift in Sources */,
 				A019012120427C9400121A09 /* UIColor.swift in Sources */,
 				A0E2D12320CF875900BCBDD0 /* CollectionViewCellGettable.swift in Sources */,
+				A079C86F20EB3292003685B5 /* DataSource.swift in Sources */,
 				A060C1B22032D1BC0044E83B /* TableViewCellGettable.swift in Sources */,
 				A040AED72035594200CB7CDA /* PlaygroundUtil.swift in Sources */,
 			);
@@ -310,6 +321,7 @@
 			files = (
 				A060C1B62032D4F70044E83B /* TestCell.swift in Sources */,
 				A060C1AD2032CF9A0044E83B /* TestViewController.swift in Sources */,
+				A032479920EDEB1A00325447 /* DataSourceTests.swift in Sources */,
 				A068FC632032B6900028219F /* SnakepitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
