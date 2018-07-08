@@ -10,7 +10,6 @@
 		A019012120427C9400121A09 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A019012020427C9400121A09 /* UIColor.swift */; };
 		A032479920EDEB1A00325447 /* DataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032479820EDEB1A00325447 /* DataSourceTests.swift */; };
 		A040AED72035594200CB7CDA /* PlaygroundUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040AED62035594200CB7CDA /* PlaygroundUtil.swift */; };
-		A054DA4C207B541600B2CE4E /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A054DA4B207B541600B2CE4E /* EmptyStateView.swift */; };
 		A060C1AD2032CF9A0044E83B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060C1AC2032CF9A0044E83B /* TestViewController.swift */; };
 		A060C1AF2032D0310044E83B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A060C1AE2032D0310044E83B /* Main.storyboard */; };
 		A060C1B22032D1BC0044E83B /* TableViewCellGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060C1B12032D1BC0044E83B /* TableViewCellGettable.swift */; };
@@ -25,8 +24,6 @@
 		A0A0BFF5207C6EF4008C53AA /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A0BFF4207C6EF4008C53AA /* Date.swift */; };
 		A0A4F9F32038FB1500673FBA /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4F9F22038FB1500673FBA /* AlertController.swift */; };
 		A0A4F9F620391D8E00673FBA /* SnakepitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4F9F520391D8E00673FBA /* SnakepitTableViewController.swift */; };
-		A0A569632042A3BE00152821 /* JavaScriptRunnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A569622042A3BE00152821 /* JavaScriptRunnable.swift */; };
-		A0A569652042A46300152821 /* example.js in Resources */ = {isa = PBXBuildFile; fileRef = A0A569642042A46300152821 /* example.js */; };
 		A0C0301A2041E6D6009BC3FD /* TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C030192041E6D6009BC3FD /* TargetAction.swift */; };
 		A0E2D12320CF875900BCBDD0 /* CollectionViewCellGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2D12220CF875900BCBDD0 /* CollectionViewCellGettable.swift */; };
 		A0FB43E620425498006D1D48 /* UserDefaultsGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB43E520425498006D1D48 /* UserDefaultsGettable.swift */; };
@@ -49,7 +46,6 @@
 		A019012020427C9400121A09 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		A032479820EDEB1A00325447 /* DataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceTests.swift; sourceTree = "<group>"; };
 		A040AED62035594200CB7CDA /* PlaygroundUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundUtil.swift; sourceTree = "<group>"; };
-		A054DA4B207B541600B2CE4E /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		A060C1AC2032CF9A0044E83B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A060C1AE2032D0310044E83B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A060C1B12032D1BC0044E83B /* TableViewCellGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellGettable.swift; sourceTree = "<group>"; };
@@ -67,8 +63,6 @@
 		A0A0BFF4207C6EF4008C53AA /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		A0A4F9F22038FB1500673FBA /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		A0A4F9F520391D8E00673FBA /* SnakepitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakepitTableViewController.swift; sourceTree = "<group>"; };
-		A0A569622042A3BE00152821 /* JavaScriptRunnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaScriptRunnable.swift; sourceTree = "<group>"; };
-		A0A569642042A46300152821 /* example.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = example.js; sourceTree = "<group>"; };
 		A0C030192041E6D6009BC3FD /* TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetAction.swift; sourceTree = "<group>"; };
 		A0E2D12220CF875900BCBDD0 /* CollectionViewCellGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellGettable.swift; sourceTree = "<group>"; };
 		A0FB43E520425498006D1D48 /* UserDefaultsGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsGettable.swift; sourceTree = "<group>"; };
@@ -130,7 +124,6 @@
 			children = (
 				A068FC572032B6900028219F /* Slash.h */,
 				A068FC582032B6900028219F /* Info.plist */,
-				A0A569622042A3BE00152821 /* JavaScriptRunnable.swift */,
 				A019012020427C9400121A09 /* UIColor.swift */,
 				A0C030192041E6D6009BC3FD /* TargetAction.swift */,
 				A0FB43E520425498006D1D48 /* UserDefaultsGettable.swift */,
@@ -143,7 +136,6 @@
 				A040AED62035594200CB7CDA /* PlaygroundUtil.swift */,
 				A0A4F9F520391D8E00673FBA /* SnakepitTableViewController.swift */,
 				A0A0BFF4207C6EF4008C53AA /* Date.swift */,
-				A054DA4B207B541600B2CE4E /* EmptyStateView.swift */,
 				AE5AAA5E20A65BAC009A216B /* SnakepitNavigationViewController.swift */,
 				A079C86E20EB3292003685B5 /* DataSource.swift */,
 				A096D56220F23631006D41EA /* ConfigurableCell.swift */,
@@ -155,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				A032479820EDEB1A00325447 /* DataSourceTests.swift */,
-				A0A569642042A46300152821 /* example.js */,
 				A060C1B02032D06B0044E83B /* Storyboard */,
 				A068FC622032B6900028219F /* SnakepitTests.swift */,
 				A068FC642032B6900028219F /* Info.plist */,
@@ -265,7 +256,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0A569652042A46300152821 /* example.js in Resources */,
 				A060C1AF2032D0310044E83B /* Main.storyboard in Resources */,
 				A060C1B42032D4CE0044E83B /* TestCell.xib in Resources */,
 			);
@@ -295,12 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0A569632042A3BE00152821 /* JavaScriptRunnable.swift in Sources */,
 				A0A0BFF5207C6EF4008C53AA /* Date.swift in Sources */,
 				AE5AAA5320A61520009A216B /* WaterFallLayout.swift in Sources */,
 				AE5AAA5F20A65BAC009A216B /* SnakepitNavigationViewController.swift in Sources */,
 				A0A4F9F620391D8E00673FBA /* SnakepitTableViewController.swift in Sources */,
-				A054DA4C207B541600B2CE4E /* EmptyStateView.swift in Sources */,
 				A0FB43E620425498006D1D48 /* UserDefaultsGettable.swift in Sources */,
 				AE5AAA5120A614E6009A216B /* BlockchainLayout.swift in Sources */,
 				A0A4F9F32038FB1500673FBA /* AlertController.swift in Sources */,
