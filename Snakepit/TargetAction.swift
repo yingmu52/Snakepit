@@ -42,3 +42,21 @@ extension UIGestureRecognizer: TargetActionProtocol {
     addTarget(wraper, action: #selector(wraper.action))
   }
 }
+
+extension UIBarButtonItem: TargetActionProtocol {
+  public convenience init(image: UIImage?, style: UIBarButtonItemStyle, _ action: @escaping Action) {
+    self.init(image: image, style: style, target: nil, action: nil)
+    self.onTouch(action)
+  }
+
+  public convenience init(title: String?, style: UIBarButtonItemStyle, _ action: @escaping Action) {
+    self.init(title: title, style: style, target: nil, action: nil)
+    self.onTouch(action)
+  }
+
+  public func onTouch(_ action: @escaping Action) {
+    let wrapper = currentWrapper(for: action)
+    self.target = wrapper
+    self.action = #selector(wrapper.action)
+  }
+}
