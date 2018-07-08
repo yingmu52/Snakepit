@@ -1,6 +1,6 @@
-[![Build Status](https://www.bitrise.io/app/971d975c5f4519e4/status.svg?token=gVcICCdDNPnUeYe-ZhP15Q)](https://www.bitrise.io/app/971d975c5f4519e4)
+[![Build Status](https://app.bitrise.io/app/971d975c5f4519e4/status.svg?token=gVcICCdDNPnUeYe-ZhP15Q&branch=master)](https://www.bitrise.io/app/971d975c5f4519e4)
 ![ios](https://cocoapod-badges.herokuapp.com/p/Snakepit/badge.png)
-![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg)
+![Swift 4.1](https://img.shields.io/badge/Swift-4.1-orange.svg)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/Snakepit.svg)](#cocoapods)
 ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -14,7 +14,7 @@ pod 'Snakepit'
 
 # Examples
 
-- Use `AlertController` with chained promise style
+#### Use `AlertController` with chained promise style
 
 ```swift
   override func viewDidLoad() {
@@ -33,7 +33,7 @@ pod 'Snakepit'
   }
 ```
 
-- Typesafe Storyboard
+#### Typesafe Storyboard
 
 > Let's say you have a `UITabBarController` in `Main.storyboard` called `TabBarViewController`, make sure its storyboard ID is also `TabBarViewController`
 
@@ -52,7 +52,7 @@ enum Storyboard: String, StoryboardGettable {
 let tabVc = Storyboard.Main.get(TabbarViewController.self)
 ```
 
-- Typesafe TableViewCell
+#### Typesafe TableViewCell
 
 > Let's say you have a custom prototype cell `MyCell`, make sure its reuse identifier is `MyCell`.
 
@@ -67,7 +67,7 @@ let tabVc = Storyboard.Main.get(TabbarViewController.self)
 
 you can use `tableView.register(cell: MyCell.self)` in `viewDidLoad` if you want to register a cell from a `.xib`
 
-- Hex UIColor
+#### Hex UIColor
 
 ```swift
 UIColor(0xFF0000) // the same as UIColor.red
@@ -75,7 +75,7 @@ UIColor(0x00FF00) // the same as UIColor.green
 UIColor(0x0000FF) // the same as UIColor.blue
 ```
 
-- Target-Action using closure
+#### Target-Action using closure
 
 ```swift
 UIButton().onTouch(for: .touchUpInside) {
@@ -85,9 +85,18 @@ UIButton().onTouch(for: .touchUpInside) {
 UISwitch().onTouch(for: .valueChanged) {
   print("switch toggled")
 }
+
+UITapGestureRecognizer().onTouch {
+  print("tap detected")
+}
+
+
+UIBarButtonItem(title: "item", style: .plain) {
+  print("item pressed")
+}
 ```
 
-- Typesafe UserDefault
+#### Typesafe UserDefault
 
 > Let's say you want to store a `URL` in `UserDefault` with key `myURL` and a phone number (`String`) with key `phone`
 
