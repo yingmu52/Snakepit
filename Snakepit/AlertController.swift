@@ -2,11 +2,11 @@ import Foundation
 import UIKit
 
 public extension UIAlertController {
-  public static func alert(_ name: String, message: String? = nil) -> UIAlertController {
+    static func alert(_ name: String, message: String? = nil) -> UIAlertController {
     return UIAlertController(title: name, message: message, preferredStyle: .alert)
   }
 
-  public static func sheet(_ name: String, message: String? = nil) -> UIAlertController {
+    static func sheet(_ name: String, message: String? = nil) -> UIAlertController {
     return UIAlertController(title: name, message: message, preferredStyle: .actionSheet)
   }
 
@@ -18,19 +18,19 @@ public extension UIAlertController {
 
 public extension UIAlertController {
   @discardableResult
-  public func action(title: String, handler: (() -> Void)? = nil) -> UIAlertController {
+    func action(title: String, handler: (() -> Void)? = nil) -> UIAlertController {
     addAction(title: title, style: .default) { _ in handler?() }
     return self
   }
 
   @discardableResult
-  public func cancelAction(title: String, handler: (() -> Void)? = nil) -> UIAlertController {
+    func cancelAction(title: String, handler: (() -> Void)? = nil) -> UIAlertController {
     addAction(title: title, style: .cancel) { _ in handler?() }
     return self
   }
 
   @discardableResult
-  public func destructiveAction(title: String, handler: (() -> Void)? = nil) -> UIAlertController {
+    func destructiveAction(title: String, handler: (() -> Void)? = nil) -> UIAlertController {
     addAction(title: title, style: .destructive) { _ in handler?() }
     return self
   }

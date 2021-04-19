@@ -3,7 +3,7 @@ import UIKit
 
 @available(iOS 10.0, *)
 public extension UIViewController {
-  public func playgroundView(
+    func playgroundView(
     device: Device = .phone4_7inch,
     orientation: Orientation = .portrait,
     contentSizeCategory: UIContentSizeCategory? = nil,

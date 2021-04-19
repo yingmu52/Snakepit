@@ -14,7 +14,7 @@ private extension UIViewController {
 }
 
 public extension StoryboardGettable where Self: RawRepresentable, Self.RawValue == String {
-  public func get<T: UIViewController>(_ type: T.Type) -> T {
+    func get<T: UIViewController>(_ type: T.Type) -> T {
     let story = UIStoryboard(name: rawValue, bundle: Bundle(for: T.self))
     guard let viewController = story.instantiateViewController(withIdentifier: T.storyboardID) as? T else {
       fatalError("This view controller does not exist in the storyboard")
@@ -22,7 +22,7 @@ public extension StoryboardGettable where Self: RawRepresentable, Self.RawValue 
     return viewController
   }
 
-  public var initialViewController: UIViewController {
+    var initialViewController: UIViewController {
     let story = UIStoryboard(name: rawValue, bundle: bundle)
     guard let viewController = story.instantiateInitialViewController() else {
       fatalError("This view controller does not exist in the storyboard")

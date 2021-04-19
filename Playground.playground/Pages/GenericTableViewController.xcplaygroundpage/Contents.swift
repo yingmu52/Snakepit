@@ -4,7 +4,7 @@ import UIKit
 import PlaygroundSupport
 
 let vc = UIViewController()
-//vc.view.frame = CGRect(x: 0, y: 0, width: 300, height: 600)
+// vc.view.frame = CGRect(x: 0, y: 0, width: 300, height: 600)
 vc.view.backgroundColor = .white
 
 let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 44))
@@ -25,4 +25,3 @@ vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "item", style: .pl
   vc.showAlert("bar button item pressed").cancelAction(title: "Cancel")
 }
 PlaygroundPage.current.liveView = UINavigationController(rootViewController: vc)
-
