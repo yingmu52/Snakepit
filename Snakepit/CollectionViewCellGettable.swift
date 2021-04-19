@@ -24,7 +24,7 @@ extension UICollectionView: CollectionViewCellGettable {
 
   public func deque<T>(header: T.Type, for indexPath: IndexPath) -> T where T: UICollectionReusableView {
     guard let header = dequeueReusableSupplementaryView(
-      ofKind: UICollectionElementKindSectionHeader,
+      ofKind: UICollectionView.elementKindSectionHeader,
       withReuseIdentifier: T.reuseId, for: indexPath) as? T else {
         fatalError("dequeue collection view header fail")
     }
@@ -33,7 +33,7 @@ extension UICollectionView: CollectionViewCellGettable {
 
   public func deque<T>(footer: T.Type, for indexPath: IndexPath) -> T where T: UICollectionReusableView {
     guard let footer = dequeueReusableSupplementaryView(
-      ofKind: UICollectionElementKindSectionFooter,
+      ofKind: UICollectionView.elementKindSectionFooter,
       withReuseIdentifier: T.reuseId, for: indexPath) as? T else {
         fatalError("dequeue collection view footer fail")
     }

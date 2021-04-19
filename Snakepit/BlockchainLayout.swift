@@ -4,7 +4,7 @@ public class BlockchainLayout: UICollectionViewFlowLayout {
   
   public convenience init(
     itemSize: CGSize,
-    direction: UICollectionViewScrollDirection = .horizontal,
+    direction: UICollectionView.ScrollDirection = .horizontal,
     pageMargin: CGFloat = 0.0) {
     self.init()
     self.itemSize = itemSize
@@ -16,7 +16,7 @@ public class BlockchainLayout: UICollectionViewFlowLayout {
 extension BlockchainLayout {
   override public func prepare() {
     guard let collectionView = collectionView else { return }
-    collectionView.decelerationRate = UIScrollViewDecelerationRateFast
+    collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
     let collectionSize = collectionView.bounds.size
     let y = (collectionSize.height - itemSize.height) / 2
     let x = (collectionSize.width - itemSize.width) / 2

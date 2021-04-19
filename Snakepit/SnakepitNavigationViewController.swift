@@ -20,6 +20,6 @@ extension SnakepitNavigationViewController: UIGestureRecognizerDelegate {
     let translation = pan.translation(in: pan.view)
     if translation.x <= 0 { return false }
     if value(forKey: "_isTransitioning") as? Bool == true { return false }
-    return childViewControllers.count == 1 ? false : true
+    return children.count == 1 ? false : true
   }
 }

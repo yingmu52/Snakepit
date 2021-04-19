@@ -15,7 +15,7 @@ public extension UIViewController {
     parent.view.addSubview(child.view)
     parent.view.frame.size = parentSize
     parent.preferredContentSize = parentSize
-    parent.addChildViewController(child)
+    parent.addChild(child)
 
     if let moreTraits = additionalTraits, let category = contentSizeCategory {
       let allTraits = UITraitCollection(traitsFrom: [
@@ -23,7 +23,7 @@ public extension UIViewController {
         moreTraits,
         .init(preferredContentSizeCategory: category)
         ])
-      parent.setOverrideTraitCollection(allTraits, forChildViewController: child)
+      parent.setOverrideTraitCollection(allTraits, forChild: child)
       child.view.translatesAutoresizingMaskIntoConstraints = false
       parent.view.translatesAutoresizingMaskIntoConstraints = false
     }

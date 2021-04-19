@@ -8,7 +8,7 @@ class TestViewController: UIViewController {
 }
 
 class TableViewController: UITableViewController {
-  override init(style: UITableViewStyle) {
+  override init(style: UITableView.Style) {
     super.init(style: style)
     tableView.register(cell: TestCell.self)
   }

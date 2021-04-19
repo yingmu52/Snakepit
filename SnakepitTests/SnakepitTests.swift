@@ -67,8 +67,8 @@ class SnakepitTests: XCTestCase {
     }
     var selectedItem = [String]()
     tvc.didSelect = { uuid in
-      XCTAssertNotNil(data.index(of: uuid))
-      guard let row = selectedItem.index(of: uuid) else {
+      XCTAssertNotNil(data.firstIndex(of: uuid))
+      guard let row = selectedItem.firstIndex(of: uuid) else {
         return XCTFail("\(uuid) does not exist in \(selectedItem)")
       }
       selectedItem.remove(at: row)

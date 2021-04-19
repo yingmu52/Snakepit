@@ -30,7 +30,7 @@ extension TargetActionProtocol {
 }
 
 extension UIControl: TargetActionProtocol {
-  public func onTouch(for controlEvents: UIControlEvents, _ closure: @escaping Action) {
+  public func onTouch(for controlEvents: UIControl.Event, _ closure: @escaping Action) {
     let wrapper = currentWrapper(for: closure)
     addTarget(wrapper, action: #selector(wrapper.action), for: controlEvents) // it is safe with same input!
   }
@@ -44,12 +44,12 @@ extension UIGestureRecognizer: TargetActionProtocol {
 }
 
 extension UIBarButtonItem: TargetActionProtocol {
-  public convenience init(image: UIImage?, style: UIBarButtonItemStyle, _ action: @escaping Action) {
+  public convenience init(image: UIImage?, style: UIBarButtonItem.Style, _ action: @escaping Action) {
     self.init(image: image, style: style, target: nil, action: nil)
     self.onTouch(action)
   }
 
-  public convenience init(title: String?, style: UIBarButtonItemStyle, _ action: @escaping Action) {
+  public convenience init(title: String?, style: UIBarButtonItem.Style, _ action: @escaping Action) {
     self.init(title: title, style: style, target: nil, action: nil)
     self.onTouch(action)
   }

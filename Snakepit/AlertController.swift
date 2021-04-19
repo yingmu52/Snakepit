@@ -11,7 +11,7 @@ public extension UIAlertController {
   }
 
   func addAction(title: String,
-                 style: UIAlertActionStyle = .default, handler: ((UIAlertAction) -> Void)? = nil) {
+                 style: UIAlertAction.Style = .default, handler: ((UIAlertAction) -> Void)? = nil) {
     addAction(UIAlertAction(title: title, style: style, handler: handler))
   }
 }
